@@ -1,0 +1,28 @@
+﻿@model IEnumerable<CustomerTypeHeadCount>
+
+<h4>Art Count by CustomerType</h4>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>CustomerType Name</th>
+                <th>Art Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.CustomerTypeName</td>
+                    <td>@item.Count</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No Art count data available.</p>
+}
