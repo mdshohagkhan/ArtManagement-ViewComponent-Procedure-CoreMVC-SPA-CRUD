@@ -97,3 +97,7 @@ secrets.json
 # Azure Functions (optional)
 # ================================
 local.settings.json
+#=============================
+!wwwroot/bootstrap/bootstrap.min.css
+!wwwroot/jquery/jquery.min.js
+
